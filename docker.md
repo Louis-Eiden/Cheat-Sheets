@@ -4,6 +4,10 @@ A cheat sheet for Docker commands.
 
 #
 
+[variable] = placeholder for a variable
+
+#
+
 ### Start Docker
 
 > docker-compose up

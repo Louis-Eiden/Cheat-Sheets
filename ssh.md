@@ -4,6 +4,10 @@ A cheat sheet for ssh commands.
 
 #
 
+[variable] = placeholder for a variable
+
+#
+
 ### start ssh-agent in the background
 
 > eval "$(ssh-agent -s)"
@@ -36,7 +40,7 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 
 ### 1. go to repo directory
 
-> ssh-keygen -t ed25519 -C "your_github_email@example.com"
+> ssh-keygen -t ed25519 -C {your_github_email@example.com}
 
 ### 2. Enter a file in which to save the key (press enter to use default)
 

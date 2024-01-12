@@ -4,6 +4,10 @@ A cheat sheet for Django commands.
 
 #
 
+[variable] = placeholder for a variable
+
+#
+
 ## Django Installation
 
 ### Install Python
@@ -16,13 +20,15 @@ https://www.youtube.com/watch?v=i-MuSAwgwCU&t=77s
 
 ### Install Python virtual environment into project directory
 
-> python -m venv <venv folder name>
-> https://www.infoworld.com/article/3239675/virtualenv-and-venv-python-virtual-environments-explained.html
-> https://www.youtube.com/watch?v=ohlRbcasPAc&t=7s
+> python -m venv [venv_folder_name]
+
+https://www.infoworld.com/article/3239675/virtualenv-and-venv-python-virtual-environments-explained.html
+
+https://www.youtube.com/watch?v=ohlRbcasPAc&t=7s
 
 ### Start the venv
 
-> <venv folder name>\Scripts\activate
+> [venv_folder_name]\Scripts\activate
 
 ### update pip
 
@@ -36,12 +42,12 @@ https://www.youtube.com/watch?v=i-MuSAwgwCU&t=77s
 
 ### Start Django Project
 
-> django-admin startproject <projectname>
+> django-admin startproject [projectname]
 
 ### Start Django App
 
 > cd projectname
-> python manage.py startapp <appname>
+> python manage.py startapp [appname]
 
 ### Run migrations
 
@@ -63,7 +69,7 @@ http://localhost:8000
 
 ### Registering the Application inside of settings.py add appname to INSTALLED_APPS
 
-go to <projectname>/urls.py and add:
+go to [projectname]/urls.py and add:
 
 > from django.urls import include
 > path('', include('appname.urls')),

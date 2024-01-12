@@ -1,7 +1,5 @@
 # SQL by example
 
-[`English`](README.md) [`Russian`](README_RUS.md)
-
 SQL (Structured Query Language) is a special query language for working with relational databases (e.g. [MySQL](https://en.wikipedia.org/wiki/MySQL), [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL), [Oracle](https://en.wikipedia.org/wiki/Oracle_Database), [MariaDB](https://en.wikipedia.org/wiki/MariaDB)). SQL queries are constructed from a set of operators, which are the usual words of the English language.
 
 > All of the above examples were successfully tested in PostgreSQL version 15.

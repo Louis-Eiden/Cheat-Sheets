@@ -72,3 +72,9 @@ if ! ssh-add -l | grep -q "path_to_private-key"; then
 	ssh-add path_to_private-key
 fi
 ```
+
+### check ssh connection to github
+
+```bash
+ssh -T git@github.com
+```

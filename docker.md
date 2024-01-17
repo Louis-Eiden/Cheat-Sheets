@@ -12,9 +12,21 @@ A cheat sheet for Docker commands.
 
 > docker-compose up
 
+### Start Docker in background
+
+> docker-compose up -d
+
 ### only Build Docker Image
 
 > docker-compose build
+
+### Build Docker Image and start
+
+> docker-compose up --build
+
+### Stop Docker and remove containers
+
+> docker-compose down
 
 ### go to the root directory of your porject and list the running containers
 

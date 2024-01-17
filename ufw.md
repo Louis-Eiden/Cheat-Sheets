@@ -42,6 +42,12 @@ sudo ufw allow ssh
 sudo ufw allow 80
 ```
 
+### Allow Port with Protocol
+
+```bash
+sudo ufw allow 80/tcp
+```
+
 ### Allow Port Range
 
 ```bash
@@ -58,6 +64,12 @@ sudo ufw allow from
 
 ```bash
 sudo ufw allow from to any port
+```
+
+### Delete port rule
+
+```bash
+sudo ufw delete allow 80
 ```
 
 ### show all rules

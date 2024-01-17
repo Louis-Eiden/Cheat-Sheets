@@ -9,7 +9,6 @@ A Cheat Sheet for Windows 10
 - [Folder Shortcuts](#folder-shortcuts)
 - [CMD Commands](#cmd-commands)
 - [PowerShell Commands](#powershell-commands)
-- [Windows Terminal](#windows-terminal)
 - [Tools](#tools)
   - [Chocolatey](#chocolatey)
   - [Windows Subsystem for Linux](#windows-subsystem-for-linux)
@@ -24,7 +23,7 @@ A Cheat Sheet for Windows 10
   - [Windows 10 God Mode](#windows-10-god-mode)
   - [Windows 10 Secret Start Menu](#windows-10-secret-start-menu)
   - [Windows 10 Secret Screen Recorder](#windows-10-secret-screen-recorder)
-  - [show windows keys](#show-windows-keys)
+  - [Show Windows Keys](#show-windows-keys)
   - [Speed up Windows 10](#speed-up-windows-10)
 - [Fixes](#fixes)
   - [Fix blurry apps](#fix-blurry-apps)
@@ -37,7 +36,7 @@ A Cheat Sheet for Windows 10
 
 #
 
-## Keyboard Shortcuts
+## **<u id="Keyboard Shortcuts" >Keyboard Shortcuts</u>** [source&nearr;](https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
 
 | Shortcut                                      | Description                                                                |
 | --------------------------------------------- | -------------------------------------------------------------------------- |
@@ -84,7 +83,7 @@ A Cheat Sheet for Windows 10
 
 #
 
-## Run Commands [source&nearr;]()
+## **<u>Run Commands</u>** [source&nearr;]()
 
 #### Run a command - Windows Key + R
 
@@ -117,7 +116,7 @@ A Cheat Sheet for Windows 10
 
 #
 
-## Folder Shortcuts
+## **<u>Folder Shortcuts</u>**
 
 #### - Open via Run dialog box - Windows Key + R, then type shortcut name
 
@@ -140,7 +139,7 @@ A Cheat Sheet for Windows 10
 | `%userprofile%\desktop`   | Go to Desktop folder             |
 | `%userprofile%\documents` | Go to Documents folder           |
 
-## CMD Commands [source&nearr;](https://ss64.com/nt/)
+## **<u>CMD Commands</u>** [source&nearr;](https://ss64.com/nt/)
 
 #### - Open via Run dialog box - Windows Key + R, then type cmd
 
@@ -184,7 +183,7 @@ A Cheat Sheet for Windows 10
 | `shutdown`    | Shutdown computer                                |
 | `shutdown /r` | Restart computer                                 |
 
-## PowerShell Commands [source&nearr;](https://ss64.com/ps/)
+## **<u>PowerShell Commands</u>** [source&nearr;](https://ss64.com/ps/)
 
 | Command                                                | Description                            |
 | ------------------------------------------------------ | -------------------------------------- |
@@ -195,13 +194,13 @@ A Cheat Sheet for Windows 10
 | `Get-Command -Module Microsoft.PowerShell.Diagnostics` | Get the commands for a specific module |
 | `Get-Command -Module Microsoft.PowerShell.Host`        | Get the commands for a specific module |
 
-### Windows Terminal [source&nearr;](https://docs.microsoft.com/en-us/windows/terminal/)
+### **<u>Windows Terminal</u>** [source&nearr;](https://docs.microsoft.com/en-us/windows/terminal/)
 
 Windows Terminal is a new, modern, feature-rich, productive terminal application for command-line users. It includes many of the features most frequently requested by the Windows command-line community including support for tabs, rich text, globalization, configurability, theming & styling, and more.
 
 #
 
-## Tools
+## **<u>Tools</u>**
 
 ### **<u>Chocolatey</u>** [source&nearr;](https://chocolatey.org/)
 
@@ -265,50 +264,50 @@ Including most command-line tools, utilities, and applications directly on Windo
 
 #
 
-### PowerToys [source&nearr;]()
+### <u>PowerToys</u> [source&nearr;]()
 
 PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity. Inspired by the Windows 95 era PowerToys project, this reboot provides power users with ways to squeeze more efficiency out of the Windows 10 shell and customize it for individual workflows. A great overview of the Windows 95 PowerToys can be found here.
 
 #
 
-### X-Mouse Controls [source&nearr;](https://www.highrez.co.uk/downloads/XMouseButtonControl.htm)
+### <u>X-Mouse Controls</u> [source&nearr;](https://www.highrez.co.uk/downloads/XMouseButtonControl.htm)
 
 Use this application to cause windows to change focus as the mouse moves over them. This is a great way to make the mouse behave how you want it to in Windows 10.
 
 #
 
-### ZoomIt [source&nearr;](https://docs.microsoft.com/en-us/sysinternals/downloads/zoomit)
+### <u>ZoomIt</u> [source&nearr;](https://docs.microsoft.com/en-us/sysinternals/downloads/zoomit)
 
 ZoomIt is a screen zoom and annotation tool for technical presentations that include application demonstrations. ZoomIt runs unobtrusively in the tray and activates with customizable hotkeys to zoom in on an area of the screen, move around while zoomed, and draw on the zoomed image. I wrote ZoomIt to fit my specific needs and use it in all my presentations.
 
 #
 
-### Windows Sysinternals [source&nearr;](https://docs.microsoft.com/en-us/sysinternals/)
+### <u>Windows Sysinternals</u> [source&nearr;](https://docs.microsoft.com/en-us/sysinternals/)
 
 The Sysinternals Troubleshooting Utilities have been rolled up into a single suite of tools. This file contains the individual troubleshooting tools and help files. It does not contain non-troubleshooting tools like the BSOD Screen Saver or NotMyFault.
 
 #
 
-# Tricks and Tips
+## **<u>Tricks and Tips</u>**
 
-## Open Command Prompt from File Explorer
+### <u>Open Command Prompt from File Explorer</u>
 
 1. Shift + Right-click on a folder
 2. Choose Open command window here in the context menu.
 
-## Open PowerShell from File Explorer
+### <u>Open PowerShell from File Explorer</u>
 
 1. Shift + Right-click on a folder
 2. Choose Open PowerShell window here in the context menu.
 
-## Open WSL Linux Shell from File Explore
+### <u>Open WSL Linux Shell from File Explore</u>
 
 1. Shift + Right-click on a folder
 2. Choose Open Linux shell here in the context menu.
 
 #
 
-## Windows 10 God Mode [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
+## **<u>Windows 10 God Mode</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
 
 God Mode is a handy way to access multiple Windows commands in one single window. It’s not really a mode so much as a hidden control panel that contains everything, including some commands that are hidden from the regular Control Panel.
 
@@ -322,13 +321,13 @@ The folder icon will change to a Control Panel-style icon, and you can open it t
 
 #
 
-## Windows 10 Secret Start Menu [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
+## **<u>Windows 10 Secret Start Menu</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
 
 Windows 10 has a hidden menu for quick access to important features. To access it, right-click the Start button or press Windows+X on your keyboard.
 
 #
 
-## Windows 10 Secret Screen Recorder [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
+## **<u>Windows 10 Secret Screen Recorder</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
 
 Windows 10 has a secret, built-in tool intended to help record your screen during Xbox gaming sessions. But Game Bar can also be used with non-gaming apps.
 
@@ -340,13 +339,13 @@ To enable Game Bar:
 4. Click the Start Recording button (or Win+Alt+R) to start capturing video.
 5. Click it again to stop recording. Alternatively, you can press Win+Alt+R again to stop it.
 
-## show windows keys
+## **<u>Show Windows Keys</u>**
 
 ```powershell
 Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DigitalProductId' | Select-Object -Property PSChildName, DigitalProductId
 ```
 
-## Speed up Windows 10 [source&nearr;](https://www.howtogeek.com/435649/how-to-speed-up-windows-10/)
+## **<u>Speed up Windows 10</u>** [source&nearr;](https://www.howtogeek.com/435649/how-to-speed-up-windows-10/)
 
 1. Disable Startup Programs
    - Task Manager > Startup
@@ -377,9 +376,9 @@ Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Digit
 14. Use a high performance power plan
     - Control Panel > Hardware and Sound > Power Options > High Performance
 
-# Fixes
+## **<u>Fixes</u>**
 
-## Fix blurry apps [source&nearr;](https://www.howtogeek.com/435674/how-to-fix-blurry-apps-on-windows-10-with-an-external-monitor/)
+### <u>Fix blurry apps</u> [source&nearr;](https://www.howtogeek.com/435674/how-to-fix-blurry-apps-on-windows-10-with-an-external-monitor/)
 
 Windows 10 is supposed to automatically scale its interface so that it looks crisp and smooth on high-resolution displays. Unfortunately, many Windows 10 users are facing an issue where their fonts look blurry and hard to read.
 
@@ -387,13 +386,13 @@ Windows 10 is supposed to automatically scale its interface so that it looks cri
 2. Go to the Compatibility tab and under Settings section, check the ‘Disable display scaling on high DPI settings’ option.
 3. Click Apply and then OK to save the changes.
 
-## Restart Graphics Driver [source&nearr;]()
+### <u>Restart Graphics Driver</u> [source&nearr;]()
 
 `Win+Ctrl+Shift+b`
 
 #
 
-## Fix Windows Update [source&nearr;](https://www.howtogeek.com/247380/how-to-fix-windows-update-when-it-gets-stuck/)
+### <u>Fix Windows Update</u> [source&nearr;](https://www.howtogeek.com/247380/how-to-fix-windows-update-when-it-gets-stuck/)
 
 If Windows Update freezes or gets stuck, there are several steps to try.
 
@@ -406,7 +405,7 @@ If Windows Update freezes or gets stuck, there are several steps to try.
 
 #
 
-### Scan and repair system files
+### <u>Scan and repair system files</u>
 
 1. Open Command Prompt as Administrator
 2. Run `CHKDSK /F /R`
@@ -415,7 +414,7 @@ If Windows Update freezes or gets stuck, there are several steps to try.
 
 #
 
-### Reset Windows Update Components
+### <u>Reset Windows Update Components</u>
 
 1. Open Command Prompt as Administrator
 2. Type the following commands and press Enter after each one:
@@ -426,7 +425,7 @@ If Windows Update freezes or gets stuck, there are several steps to try.
 
 #
 
-## System Restore [source&nearr;](https://www.howtogeek.com/237230/how-to-enable-system-restore-and-repair-system-problems-on-windows-10/)
+### <u>System Restore</u> [source&nearr;](https://www.howtogeek.com/237230/how-to-enable-system-restore-and-repair-system-problems-on-windows-10/)
 
 System Restore is a Windows feature that can help fix certain types of crashes and other computer problems. Here’s how it works, how to set it up, and how to use it when things go awry.
 
@@ -438,7 +437,7 @@ System Restore is a Windows feature that can help fix certain types of crashes a
 
 #
 
-## Manual System Restore
+### <u>Manual System Restore</u>
 
 If System Restore doesn’t work for you, you can try to do a manual system restore.
 

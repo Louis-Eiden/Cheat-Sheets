@@ -7,7 +7,9 @@ A cheat sheet for Git commands.
 ## Table of Contents
 
 - [Installation](#installation)
+
 - [Setup / Configuration](#setup--configuration-source)
+
 - [Basics](#basics)
 
   - [Initialize a Repository](#initialize-a-repository)
@@ -17,6 +19,9 @@ A cheat sheet for Git commands.
   - [Log and Show](#log-and-show)
   - [Stash](#stash)
   - [Tags](#tags)
+  - [Remote Repositories](#remote-repositories)
+  - [Inspect and Compare](#inspect-and-compare)
+  - [Managing History](#managing-history)
 
 - [Tutorials](#tutorials)
 
@@ -44,7 +49,7 @@ A cheat sheet for Git commands.
 
 #
 
-## Setup / Configuration [source](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+## Setup / Configuration [source&nearr;](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
 ```bash
 git config --global user.name "Your Name"               # Set your username globally.
@@ -65,9 +70,9 @@ git config --global core.editor "notepad++ -multiInst"  # Set notepad++ as your 
 
 #
 
-## Basics [source](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+# Basics [source&nearr;](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 
-### Initialize a Repository
+## Initialize a Repository
 
 ```bash
 git init                   # Initialize a local Git repository in your working directory.
@@ -81,7 +86,7 @@ git clone --branch <branch> <repository_url> <directory> # Clone a specific bran
 
 #
 
-### Stage and Snapshot
+## Stage and Snapshot
 
 ```bash
 git status                   # Show modified files in the working directory, staged for your next commit.
@@ -108,7 +113,7 @@ git rm <file>                # Removes a file from both the working directory an
 git mv                       # Moves or renames a file or directory in your Git repository.
 ```
 
-#### Commit Update
+### Commit Update
 
 ```bash
 git commit -m "feat: message"     # indicate a new feature commit in the repository.
@@ -130,7 +135,7 @@ git commit -m "hotfix: message"   # indicate hotfix-related changes.
 
 #
 
-### Branching and Merging
+## Branching and Merging
 
 ```bash
 git branch                   # List your branches. a * will appear next to the currently active branch.
@@ -148,7 +153,7 @@ git switch <branch>          # Switch to a branch.
 git switch -c <branch>       # Create a new branch and switch to it.
 ```
 
-#### Stash
+### Stash
 
 ```bash
 git stash                    # Stash the changes in the working directory away (allowing you to switch branches).
@@ -158,7 +163,7 @@ git stash drop               # Discard the most recently stashed changeset.
 git stash clear              # Discard all stashed changesets.
 ```
 
-#### Tags
+### Tags
 
 ```bash
 git tag                      # List all tags.
@@ -170,7 +175,7 @@ git push origin --tags       # Push all tags to your remote repository.
 git checkout <tagname>       # Checkout a tag (creates a detached head).
 ```
 
-### Remote Repositories
+## Remote Repositories
 
 ```bash
 git fetch                    # Fetch changes from the remote repository.
@@ -189,7 +194,7 @@ git remote -v                # List all currently configured remotes.
 
 ```
 
-### Inspect and Compare
+## Inspect and Compare
 
 ```bash
 git log                      # Show the commit history for the currently active branch.
@@ -222,9 +227,9 @@ git rebase <branch>          # Reapplies commits on the current branch onto the 
 
 #
 
-## Tutorials
+# Tutorials
 
-### Adding locally hosted code to GitHub [source](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github)
+## Adding locally hosted code to GitHub [source&nearr;](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github)
 
 1. Initialize the local directory as a Git repository
 
@@ -270,7 +275,7 @@ git push --set-upstream origin <branch>
 
 #
 
-### Push existing repository to new remote
+## Push existing repository to new remote
 
 1. Create new branch if needed
 
@@ -304,7 +309,7 @@ git push --set-upstream origin <branch>
 
 #
 
-### Deploy React app to Github pages [source](https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/)
+## Deploy React app to Github pages [source&nearr;](https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/)
 
 1. Add locally hosted code to GitHub (see above)
 
@@ -337,7 +342,7 @@ npm run deploy
 
 ## Other
 
-### [.gitignore](https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/#introduction)
+## .gitignore [source&nearr;](https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/#introduction)
 
 1. create a .gitignore file
 
@@ -349,7 +354,7 @@ touch .gitignore
 
 #
 
-### Remove from remote repository
+## Remove from remote repository
 
 1. Add to .gitignore
 2. Remove from Git Tracking
@@ -360,11 +365,11 @@ git rm -r --cached path_to_your_folder/
 
 #
 
-### Remove file history from header
+## Remove file history from header
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch <DIR/FILE>' HEAD
 
-### set new remote url
+## set new remote url
 
 ```bash
 git remote set-url origin {new url}

@@ -65,7 +65,7 @@ git config --global core.editor "notepad++ -multiInst"  # Set notepad++ as your 
 
 #
 
-## [Basics](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+## Basics [source](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 
 ### Initialize a Repository
 
@@ -130,7 +130,7 @@ git commit -m "hotfix: message"   # indicate hotfix-related changes.
 
 #
 
-### Branches
+### Branching and Merging
 
 ```bash
 git branch                   # List your branches. a * will appear next to the currently active branch.
@@ -146,20 +146,6 @@ git checkout -b <branch>     # Create a new branch and switch to it.
 git merge <branch>           # Merge a branch into the active branch.
 git switch <branch>          # Switch to a branch.
 git switch -c <branch>       # Create a new branch and switch to it.
-```
-
-#### Log and Show
-
-```bash
-git log                      # Show all commits in the current branch's history.
-git log --oneline            # Show all commits in the current branch's history in one line.
-git log <branch>             # Show all commits in the history of the specified branch.
-git log –follow <file>       # Show the commits that changed file, even across renames.
-git log -all                 # Show all commits (all branches).
-git show <commit>            # Show the metadata and content changes of the specified commit.
-git show <commit>:<filename> # Show the content changes of the specified commit and filename.
-git show HEAD                # Show the metadata and content changes of the last commit.
-git show HEAD~3              # Show the metadata and content changes of the 3rd last commit.
 ```
 
 #### Stash
@@ -182,6 +168,56 @@ git tag -d <tagname>         # Delete a tag.
 git push origin <tagname>    # Push a tag to your remote repository.
 git push origin --tags       # Push all tags to your remote repository.
 git checkout <tagname>       # Checkout a tag (creates a detached head).
+```
+
+### Remote Repositories
+
+```bash
+git fetch                    # Fetch changes from the remote repository.
+git fetch <remote>           # Fetch changes from the specified remote repository.
+git fetch -prune             # Fetch changes from the remote repository and remove any remote-tracking references that no longer exist on the remote.
+git pull                     # Fetch and merge changes from the remote repository.
+git pull <remote>            # Fetch and merge changes from the specified remote repository.
+git pull --rebase            # Fetch and rebase on the current branch.
+git push                     # Pushes local commits to the remote repository.
+git push <remote>            # Pushes local commits to the specified remote repository.
+git push -u <remote> <branch> # Pushes local commits to the specified branch of the remote repository.
+git puss -all                # Pushes all local branches to the remote repository.
+git remote                   # List all currently configured remote repositories.
+git remote add <name> <url> # Add a new remote repository.
+git remote -v                # List all currently configured remotes.
+
+```
+
+### Inspect and Compare
+
+```bash
+git log                      # Show the commit history for the currently active branch.
+git log <branch>             # Show the commit history for the specified branch.
+git log --oneline            # Show the commit history for the currently active branch in one line.
+git log --oneline <branch>   # Show the commit history for the specified branch in one line.
+git log --stat               # Show the commit history for the currently active branch and list the files that were changed.
+git log --stat <branch>      # Show the commit history for the specified branch and list the files that were changed.
+git log -p                   # Show the commit history for the currently active branch and list the content changes.
+git log -p <branch>          # Show the commit history for the specified branch and list the content changes.
+git log --graph              # Show the commit history for the currently active branch in a nice graph.
+git log --graph <branch>     # Show the commit history for the specified branch in a nice graph.
+git show                     # Show the metadata and content changes of the last commit.
+git show <commit>            # Show the metadata and content changes of the specified commit.
+git show <commit>:<filename> # Show the content changes of the specified commit and filename.
+git log –follow <file>       # Show the commits that changed file, even across renames.
+git show HEAD                # Show the metadata and content changes of the last commit.
+git show HEAD~3              # Show the metadata and content changes of the 3rd last commit.
+git show HEAD~3:<filename>   # Show the content changes of the 3rd last commit for the specified filename.
+```
+
+Managing History
+
+```bash
+git revert <commit>          # Create a new commit that undoes all of the changes made in <commit>, then apply it to the current branch.
+git revert HEAD              # Create a new commit that undoes all of the changes made in the last commit, then apply it to the current branch.
+git revert --no-commit <commit> # Undoes the changes introduced by the specified commit, but does not create a new commit.
+git rebase <branch>          # Reapplies commits on the current branch onto the tip of the specified branch.
 ```
 
 #

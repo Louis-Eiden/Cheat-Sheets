@@ -7,14 +7,11 @@ A cheat sheet for Git commands.
 ## Table of Contents
 
 - [Installation](#installation)
-
 - [Setup / Configuration](#setup--configuration-source)
-
 - [Basics](#basics)
-
   - [Initialize a Repository](#initialize-a-repository)
   - [Stage and Snapshot](#stage-and-snapshot)
-  - [Commit Update](#commit-update)
+  - [Commit Updates](#commit-updates)
   - [Branches](#branches)
   - [Log and Show](#log-and-show)
   - [Stash](#stash)
@@ -22,13 +19,10 @@ A cheat sheet for Git commands.
   - [Remote Repositories](#remote-repositories)
   - [Inspect and Compare](#inspect-and-compare)
   - [Managing History](#managing-history)
-
 - [Tutorials](#tutorials)
-
   - [Adding locally hosted code to GitHub](#adding-locally-hosted-code-to-github-source)
   - [Push existing repository to new remote](#push-existing-repository-to-new-remote)
   - [Deploy React app to Github pages](#deploy-react-app-to-github-pages-source)
-
 - [Other](#other)
   - [.gitignore](#gitignore)
   - [Remove from remote repository](#remove-from-remote-repository)
@@ -42,19 +36,29 @@ A cheat sheet for Git commands.
 | Commands                               | Description                           | Link                               |
 | -------------------------------------- | ------------------------------------- | ---------------------------------- |
 | Git for Windows stand-alone installer. | Install via installer                 | https://git-scm.com/download/win   |
+| `$ sudo apt-get install git`           | Install Command for Linux             | https://git-scm.com/download/linux |
 | `$ brew install git`                   | Install Git with Homebrew on Mac OS   | https://git-scm.com/download/mac   |
 | `$ sudo port selfupdate`               | Install Git with MacPorts on Mac OS   |                                    |
-| `$ sudo apt-get install git`           | Install Command for Linux             | https://git-scm.com/download/linux |
 | `$ git –version`                       | Shows the current version of your Git |                                    |
 
 #
 
 ## Setup / Configuration [source&nearr;](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
+| Configuration File                         | Description                    | Option           |
+| ------------------------------------------ | ------------------------------ | ---------------- |
+| `C:\ProgramData\Git\config`                | Windows - system-wide          | --system         |
+| `C:\Users\YourUsername\.gitconfig`         | Windows global (user-specific) | --global         |
+| `/etc/gitconfig`                           | Linux - system-wide            | --system         |
+| `~/.config/git/config`                     | Linux - user-specific          | --global         |
+| `/etc/paths.d/git`                         | Mac OS - system-wide           | --system         |
+| `~/.gitconfig`                             | Mac OS - user-specific         | --global         |
+| `\repo\.git\config` or `/repo/.git/config` | local (repository-specific)    | --local or empty |
+
 ```bash
 git config --global user.name "Your Name"               # Set your username globally.
-git config --global --unset-all user.name               # Remove the global username.
 git config --global user.email "youremail@example.com"  # Set your email globally.
+git config --global --unset-all user.name               # Remove the global username.
 git config --global --unset-all user.email              # Remove the global email.
 git config --global user.name                           # Check your username.
 git config --global user.email                          # Check your email.
@@ -113,7 +117,7 @@ git rm <file>                # Removes a file from both the working directory an
 git mv                       # Moves or renames a file or directory in your Git repository.
 ```
 
-### Commit Update
+### Commit Updates
 
 ```bash
 git commit -m "feat: message"     # indicate a new feature commit in the repository.

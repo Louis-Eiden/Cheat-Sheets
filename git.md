@@ -117,7 +117,7 @@ git rm <file>                # Removes a file from both the working directory an
 git mv                       # Moves or renames a file or directory in your Git repository.
 ```
 
-### Commit Updates
+## Commit Updates
 
 ```bash
 git commit -m "feat: message"     # indicate a new feature commit in the repository.
@@ -157,7 +157,7 @@ git switch <branch>          # Switch to a branch.
 git switch -c <branch>       # Create a new branch and switch to it.
 ```
 
-### Stash
+## Stash
 
 ```bash
 git stash                    # Stash the changes in the working directory away (allowing you to switch branches).
@@ -167,7 +167,7 @@ git stash drop               # Discard the most recently stashed changeset.
 git stash clear              # Discard all stashed changesets.
 ```
 
-### Tags
+## Tags
 
 ```bash
 git tag                      # List all tags.

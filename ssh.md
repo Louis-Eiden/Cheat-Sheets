@@ -2,35 +2,21 @@
 
 A cheat sheet for ssh commands.
 
-#
-
 [variable] = placeholder for a variable
 
 #
 
-### start ssh-agent in the background
-
-> eval "$(ssh-agent -s)"
-
-### show current ssh keys
-
-> ssh-add -l
-
-### add ssh key to ssh-agent
-
-> ssh-add /.ssh/mykey
-
-### Delete all keys
-
-> ssh-add -D
-
-### Delete a specific key
-
-> ssh-add -d /.ssh/mykey
-
-### Create a new ssh key
-
-> ssh-keygen -t rsa -b 4096 -C "
+```bash
+eval "$(ssh-agent -s)" # start the ssh-agent in the background
+ssh-add ~/.ssh/[private_key] # add ssh key to ssh-agent
+ssh-add -l # show current ssh keys
+ssh-add -D # delete all keys
+ssh-add -d ~/.ssh/[private_key] # delete a specific key
+ssh-keygen -t rsa -b 4096 -C # create a new ssh key using 4096 bit rsa encryption
+ssh-keygen -p # change passphrase of an existing ssh key
+ssh-keygen -y -f ~/.ssh/[private_key] > ~/.ssh/[public_key] # generate public key from private key
+ssh-keygen -l -f ~/.ssh/[public_key] # show fingerprint of public key
+```
 
 #
 
@@ -40,7 +26,7 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 
 ### 1. go to repo directory
 
-> ssh-keygen -t ed25519 -C {your_github_email@example.com}
+ssh-keygen -t ed25519 -C {your_github_email@example.com}
 
 ### 2. Enter a file in which to save the key (press enter to use default)
 

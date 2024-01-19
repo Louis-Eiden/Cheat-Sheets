@@ -9,6 +9,7 @@ A Cheat Sheet for Windows 10
 - [Folder Shortcuts](#folder-shortcuts)
 - [CMD Commands](#cmd-commands)
 - [PowerShell Commands](#powershell-commands)
+- [Windows Terminal](#windows-terminal)
 - [Tools](#tools)
   - [Chocolatey](#chocolatey)
   - [Windows Subsystem for Linux](#windows-subsystem-for-linux)
@@ -19,7 +20,7 @@ A Cheat Sheet for Windows 10
 - [Tricks and Tips](#tricks-and-tips)
   - [Open Command Prompt from File Explorer](#open-command-prompt-from-file-explorer)
   - [Open PowerShell from File Explorer](#open-powershell-from-file-explorer)
-  - [Open WSL Linux Shell from File Explore](#open-wsl-linux-shell-from-file-explore)
+  - [Open WSL Linux Shell from File Explore](#open-wsl-linux-shell-from-file-explorer)
   - [Windows 10 God Mode](#windows-10-god-mode)
   - [Windows 10 Secret Start Menu](#windows-10-secret-start-menu)
   - [Windows 10 Secret Screen Recorder](#windows-10-secret-screen-recorder)
@@ -36,54 +37,54 @@ A Cheat Sheet for Windows 10
 
 #
 
-## **<u id="Keyboard Shortcuts" >Keyboard Shortcuts</u>** [source&nearr;](https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+## **<u id="keyboard-shortcuts" >Keyboard Shortcuts</u>** [source&nearr;](https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
 
-| Shortcut                                      | Description                                                                |
-| --------------------------------------------- | -------------------------------------------------------------------------- |
-| `Windows Key`                                 | Open Start Menu                                                            |
-| `Windows Key + A`                             | Open Action Center                                                         |
-| Windows Key + B                               | Highlight the notification area                                            |
-| Windows Key + C                               | Open Cortana in listening mode                                             |
-| **<u>Windows Key + D**                        | Display and hide the desktop                                               |
-| **<u>Windows Key + E**                        | Open File Explorer                                                         |
-| Windows Key + F                               | Open Feedback Hub                                                          |
-| **<u>Windows Key + G**                        | Open Game bar when a game is open                                          |
-| Windows Key + H                               | Open the Share charm                                                       |
-| Windows Key + I                               | Open Settings                                                              |
-| Windows Key + J                               | Set focus to a Windows tip                                                 |
-| **<u>Windows Key + K**                        | Open the Connect quick action                                              |
-| Windows Key + L                               | Lock your PC or switch accounts                                            |
-| Windows Key + M                               | Minimize all windows                                                       |
-| Windows Key + Shift + M                       | Restore minimized windows on the desktop                                   |
-| Windows Key + O                               | Lock device orientation                                                    |
-| Windows Key + P                               | Choose a presentation display mode                                         |
-| Windows Key + Q                               | Open Cortana in typing mode                                                |
-| **<u>Windows Key + R**                        | Open Run dialog box                                                        |
-| Windows Key + S                               | Open search                                                                |
-| **<u>Windows Key + T**                        | Cycle through apps on the taskbar                                          |
-| Windows Key + U                               | Open Ease of Access Center                                                 |
-| **<u>Windows Key + V**                        | Show Clipboard History                                                     |
-| **<u>Windows Key + X**                        | Open the Quick Link menu                                                   |
-| Windows Key + Z                               | Show the commands available in an app                                      |
-| **<u>Windows Key + 1-9**                      | Open the app pinned to the taskbar in the position indicated by the number |
-| Windows Key + ,                               | Temporarily peek at the desktop                                            |
-| Windows Key + .                               | Snap a window to a quadrant of the screen                                  |
-| Windows Key + Spacebar                        | Switch input language and keyboard layout                                  |
-| **<u>Windows Key + Tab**                      | Open Task view                                                             |
-| Windows Key + Esc                             | Close Task view                                                            |
-| **<u>Windows Key + Left/Right arrow**         | Snap app windows Left/Right                                                |
-| **<u>Windows Key + Up/Down arrow**            | Maximize/Minimize app windows                                              |
-| **<u>Windows Key + Shift + Up arrow**         | Stretch the desktop window to the top and bottom of the screen             |
-| **<u>Windows Key + Shift + Down arrow**       | Restore/minimize active desktop windows vertically, maintaining width      |
-| **<u>Windows Key + Shift + Left/Right arrow** | With multiple monitors, move the active window to other monitor            |
-| **<u>Windows Key + Ctrl + Left/Right arrow**  | Switch between virtual desktops                                            |
-| Windows Key + Ctrl + D                        | Add a virtual desktop                                                      |
-| Windows Key + Ctrl + F4                       | Close current virtual desktop                                              |
-| Windows Key + Ctrl + F                        | Search for PCs (if you're on a network)                                    |
+| Shortcut                                        | Description                                                                |
+| ----------------------------------------------- | -------------------------------------------------------------------------- |
+| `Windows Key`                                   | Open Start Menu                                                            |
+| `Windows Key + A`                               | Open Action Center                                                         |
+| `Windows Key + B`                               | Highlight the notification area                                            |
+| `Windows Key + C`                               | Open Cortana in listening mode                                             |
+| **<u>`Windows Key + D`**                        | Display and hide the desktop                                               |
+| **<u>`Windows Key + E`**                        | Open File Explorer                                                         |
+| `Windows Key + F`                               | Open Feedback Hub                                                          |
+| **<u>`Windows Key + G`**                        | Open Game bar when a game is open                                          |
+| `Windows Key + H`                               | Open the Share charm                                                       |
+| `Windows Key + I`                               | Open Settings                                                              |
+| `Windows Key + J`                               | Set focus to a Windows tip                                                 |
+| **<u>`Windows Key + K`**                        | Open the Connect quick action                                              |
+| `Windows Key + L`                               | Lock your PC or switch accounts                                            |
+| `Windows Key + M`                               | Minimize all windows                                                       |
+| `Windows Key + Shift + M`                       | Restore minimized windows on the desktop                                   |
+| `Windows Key + O`                               | Lock device orientation                                                    |
+| `Windows Key + P`                               | Choose a presentation display mode                                         |
+| `Windows Key + Q`                               | Open Cortana in typing mode                                                |
+| **<u>`Windows Key + R`**                        | Open Run dialog box                                                        |
+| `Windows Key + S`                               | Open search                                                                |
+| **<u>`Windows Key + T`**                        | Cycle through apps on the taskbar                                          |
+| `Windows Key + U`                               | Open Ease of Access Center                                                 |
+| **<u>`Windows Key + V`**                        | Show Clipboard History                                                     |
+| **<u>`Windows Key + X`**                        | Open the Quick Link menu                                                   |
+| `Windows Key + Z`                               | Show the commands available in an app                                      |
+| **<u>`Windows Key + 1-9`**                      | Open the app pinned to the taskbar in the position indicated by the number |
+| `Windows Key + ,`                               | Temporarily peek at the desktop                                            |
+| `Windows Key + .`                               | Snap a window to a quadrant of the screen                                  |
+| `Windows Key + Spacebar`                        | Switch input language and keyboard layout                                  |
+| **<u>`Windows Key + Tab`**                      | Open Task view                                                             |
+| `Windows Key + Esc`                             | Close Task view                                                            |
+| **<u>`Windows Key + Left/Right arrow`**         | Snap app windows Left/Right                                                |
+| **<u>`Windows Key + Up/Down arrow`**            | Maximize/Minimize app windows                                              |
+| **<u>`Windows Key + Shift + Up arrow`**         | Stretch the desktop window to the top and bottom of the screen             |
+| **<u>`Windows Key + Shift + Down arrow`**       | Restore/minimize active desktop windows vertically, maintaining width      |
+| **<u>`Windows Key + Shift + Left/Right arrow`** | With multiple monitors, move the active window to other monitor            |
+| **<u>`Windows Key + Ctrl + Left/Right arrow`**  | Switch between virtual desktops                                            |
+| `Windows Key + Ctrl + D`                        | Add a virtual desktop                                                      |
+| `Windows Key + Ctrl + F4`                       | Close current virtual desktop                                              |
+| `Windows Key + Ctrl + F`                        | Search for PCs (if you're on a network)                                    |
 
 #
 
-## **<u>Run Commands</u>** [source&nearr;]()
+## **<u id="run-commands" >Run Commands</u>**
 
 #### Run a command - Windows Key + R
 
@@ -116,7 +117,7 @@ A Cheat Sheet for Windows 10
 
 #
 
-## **<u>Folder Shortcuts</u>**
+## **<u id="folder-shortcuts">Folder Shortcuts</u>**
 
 #### - Open via Run dialog box - Windows Key + R, then type shortcut name
 
@@ -139,7 +140,7 @@ A Cheat Sheet for Windows 10
 | `%userprofile%\desktop`   | Go to Desktop folder             |
 | `%userprofile%\documents` | Go to Documents folder           |
 
-## **<u>CMD Commands</u>** [source&nearr;](https://ss64.com/nt/)
+## **<u id="cmd-commands">CMD Commands</u>** [source&nearr;](https://ss64.com/nt/)
 
 #### - Open via Run dialog box - Windows Key + R, then type cmd
 
@@ -183,7 +184,7 @@ A Cheat Sheet for Windows 10
 | `shutdown`    | Shutdown computer                                |
 | `shutdown /r` | Restart computer                                 |
 
-## **<u>PowerShell Commands</u>** [source&nearr;](https://ss64.com/ps/)
+## **<u id="powershell-commands">PowerShell Commands</u>** [source&nearr;](https://ss64.com/ps/)
 
 | Command                                                | Description                            |
 | ------------------------------------------------------ | -------------------------------------- |
@@ -194,15 +195,15 @@ A Cheat Sheet for Windows 10
 | `Get-Command -Module Microsoft.PowerShell.Diagnostics` | Get the commands for a specific module |
 | `Get-Command -Module Microsoft.PowerShell.Host`        | Get the commands for a specific module |
 
-### **<u>Windows Terminal</u>** [source&nearr;](https://docs.microsoft.com/en-us/windows/terminal/)
+## **<u id="windows-terminal">Windows Terminal</u>** [source&nearr;](https://docs.microsoft.com/en-us/windows/terminal/)
 
 Windows Terminal is a new, modern, feature-rich, productive terminal application for command-line users. It includes many of the features most frequently requested by the Windows command-line community including support for tabs, rich text, globalization, configurability, theming & styling, and more.
 
 #
 
-## **<u>Tools</u>**
+## **<u id="tools">Tools</u>**
 
-### **<u>Chocolatey</u>** [source&nearr;](https://chocolatey.org/)
+### **<u id="chocolatey">Chocolatey</u>** [source&nearr;](https://chocolatey.org/)
 
 Chocolatey is a package manager for Windows. It was designed to be a decentralized framework for quickly installing applications and tools that you need. It is built on the NuGet infrastructure currently using PowerShell as its focus for delivering packages from the distros to your door, err computer.
 [packages](https://community.chocolatey.org/packages)
@@ -221,12 +222,12 @@ Chocolatey is a package manager for Windows. It was designed to be a decentraliz
 
 #
 
-### **<u>Windows Subsystem for Linux</u>** [source&nearr;](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+### **<u id="windows-subsystem-for-linux">Windows Subsystem for Linux</u>** [source&nearr;](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 The Windows Subsystem for Linux lets developers run a GNU/Linux environment.
 Including most command-line tools, utilities, and applications directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup.
 
-### <u>Installing WSL2</u>
+### <u id="installing-wsl2">Installing WSL2</u>
 
 - Pre-requisities
 
@@ -250,7 +251,7 @@ Including most command-line tools, utilities, and applications directly on Windo
 
 - Official documentation [here](https://docs.microsoft.com/en-us/windows/wsl/install)
 
-### <u>Useful WSL2 Commands</u>
+### <u id="useful-wsl2-commands">Useful WSL2 Commands</u>
 
 - From Powershell/Command Prompt
   | Command | Description |
@@ -264,50 +265,50 @@ Including most command-line tools, utilities, and applications directly on Windo
 
 #
 
-### <u>PowerToys</u> [source&nearr;]()
+### <u id="powertoys">PowerToys</u>
 
 PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity. Inspired by the Windows 95 era PowerToys project, this reboot provides power users with ways to squeeze more efficiency out of the Windows 10 shell and customize it for individual workflows. A great overview of the Windows 95 PowerToys can be found here.
 
 #
 
-### <u>X-Mouse Controls</u> [source&nearr;](https://www.highrez.co.uk/downloads/XMouseButtonControl.htm)
+### <u id="x-mouse-controls">X-Mouse Controls</u> [source&nearr;](https://www.highrez.co.uk/downloads/XMouseButtonControl.htm)
 
 Use this application to cause windows to change focus as the mouse moves over them. This is a great way to make the mouse behave how you want it to in Windows 10.
 
 #
 
-### <u>ZoomIt</u> [source&nearr;](https://docs.microsoft.com/en-us/sysinternals/downloads/zoomit)
+### <u id="zoomit">ZoomIt</u> [source&nearr;](https://docs.microsoft.com/en-us/sysinternals/downloads/zoomit)
 
 ZoomIt is a screen zoom and annotation tool for technical presentations that include application demonstrations. ZoomIt runs unobtrusively in the tray and activates with customizable hotkeys to zoom in on an area of the screen, move around while zoomed, and draw on the zoomed image. I wrote ZoomIt to fit my specific needs and use it in all my presentations.
 
 #
 
-### <u>Windows Sysinternals</u> [source&nearr;](https://docs.microsoft.com/en-us/sysinternals/)
+### <u id="windows-sysinternals">Windows Sysinternals</u> [source&nearr;](https://docs.microsoft.com/en-us/sysinternals/)
 
 The Sysinternals Troubleshooting Utilities have been rolled up into a single suite of tools. This file contains the individual troubleshooting tools and help files. It does not contain non-troubleshooting tools like the BSOD Screen Saver or NotMyFault.
 
 #
 
-## **<u>Tricks and Tips</u>**
+## **<u id="tricks-and-tips">Tricks and Tips</u>**
 
-### <u>Open Command Prompt from File Explorer</u>
+### <u id="open-command-prompt-from-file-explorer">Open Command Prompt from File Explorer</u>
 
-1. Shift + Right-click on a folder
+1. `Shift + Right-click` on a folder
 2. Choose Open command window here in the context menu.
 
-### <u>Open PowerShell from File Explorer</u>
+### <u id="open-powershell-from-file-explorer">Open PowerShell from File Explorer</u>
 
-1. Shift + Right-click on a folder
+1. `Shift + Right-click` on a folder
 2. Choose Open PowerShell window here in the context menu.
 
-### <u>Open WSL Linux Shell from File Explore</u>
+### <u id="open-wsl-linux-shell-from-file-explorer">Open WSL Linux Shell from File Explorer</u>
 
-1. Shift + Right-click on a folder
+1. `Shift + Right-click` on a folder
 2. Choose Open Linux shell here in the context menu.
 
 #
 
-## **<u>Windows 10 God Mode</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
+## **<u id="windows-10-god-mode">Windows 10 God Mode</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
 
 God Mode is a handy way to access multiple Windows commands in one single window. It’s not really a mode so much as a hidden control panel that contains everything, including some commands that are hidden from the regular Control Panel.
 
@@ -321,13 +322,13 @@ The folder icon will change to a Control Panel-style icon, and you can open it t
 
 #
 
-## **<u>Windows 10 Secret Start Menu</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
+## **<u id="windows-10-secret-start-menu">Windows 10 Secret Start Menu</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
 
 Windows 10 has a hidden menu for quick access to important features. To access it, right-click the Start button or press Windows+X on your keyboard.
 
 #
 
-## **<u>Windows 10 Secret Screen Recorder</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
+## **<u id="windows-10-secret-screen-recorder">Windows 10 Secret Screen Recorder</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
 
 Windows 10 has a secret, built-in tool intended to help record your screen during Xbox gaming sessions. But Game Bar can also be used with non-gaming apps.
 
@@ -336,16 +337,16 @@ To enable Game Bar:
 1. Go to Settings > Gaming > Game Bar. Turn on “Record game clips, screenshots, and broadcast using Game Bar.”
 2. Press Windows+G to open Game Bar.
 3. Check the “Yes, this is a game” checkbox to load the Game Bar. This option won’t be available if Game Bar isn’t enabled for your game.
-4. Click the Start Recording button (or Win+Alt+R) to start capturing video.
-5. Click it again to stop recording. Alternatively, you can press Win+Alt+R again to stop it.
+4. Click the Start Recording button (or `Win+Alt+R`) to start capturing video.
+5. Click it again to stop recording. Alternatively, you can press `Win+Alt+R` again to stop it.
 
-## **<u>Show Windows Keys</u>**
+## **<u id="show-windows-keys">Show Windows Keys</u>**
 
 ```powershell
 Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DigitalProductId' | Select-Object -Property PSChildName, DigitalProductId
 ```
 
-## **<u>Speed up Windows 10</u>** [source&nearr;](https://www.howtogeek.com/435649/how-to-speed-up-windows-10/)
+## **<u id="speed-up-windows-10">Speed up Windows 10</u>** [source&nearr;](https://www.howtogeek.com/435649/how-to-speed-up-windows-10/)
 
 1. Disable Startup Programs
    - Task Manager > Startup
@@ -376,9 +377,9 @@ Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Digit
 14. Use a high performance power plan
     - Control Panel > Hardware and Sound > Power Options > High Performance
 
-## **<u>Fixes</u>**
+## **<u id="fixes">Fixes</u>**
 
-### <u>Fix blurry apps</u> [source&nearr;](https://www.howtogeek.com/435674/how-to-fix-blurry-apps-on-windows-10-with-an-external-monitor/)
+### <u id="fix-blurry-apps">Fix blurry apps</u> [source&nearr;](https://www.howtogeek.com/435674/how-to-fix-blurry-apps-on-windows-10-with-an-external-monitor/)
 
 Windows 10 is supposed to automatically scale its interface so that it looks crisp and smooth on high-resolution displays. Unfortunately, many Windows 10 users are facing an issue where their fonts look blurry and hard to read.
 
@@ -386,13 +387,13 @@ Windows 10 is supposed to automatically scale its interface so that it looks cri
 2. Go to the Compatibility tab and under Settings section, check the ‘Disable display scaling on high DPI settings’ option.
 3. Click Apply and then OK to save the changes.
 
-### <u>Restart Graphics Driver</u> [source&nearr;]()
+### <u id="restart-graphics-driver">Restart Graphics Driver</u>
 
 `Win+Ctrl+Shift+b`
 
 #
 
-### <u>Fix Windows Update</u> [source&nearr;](https://www.howtogeek.com/247380/how-to-fix-windows-update-when-it-gets-stuck/)
+### <u id="fix-windows-update">Fix Windows Update</u> [source&nearr;](https://www.howtogeek.com/247380/how-to-fix-windows-update-when-it-gets-stuck/)
 
 If Windows Update freezes or gets stuck, there are several steps to try.
 
@@ -405,7 +406,7 @@ If Windows Update freezes or gets stuck, there are several steps to try.
 
 #
 
-### <u>Scan and repair system files</u>
+### <u id="scan-and-repair-system-files">Scan and repair system files</u>
 
 1. Open Command Prompt as Administrator
 2. Run `CHKDSK /F /R`
@@ -414,7 +415,7 @@ If Windows Update freezes or gets stuck, there are several steps to try.
 
 #
 
-### <u>Reset Windows Update Components</u>
+### <u id="reset-windows-update-components">Reset Windows Update Components</u>
 
 1. Open Command Prompt as Administrator
 2. Type the following commands and press Enter after each one:
@@ -425,7 +426,7 @@ If Windows Update freezes or gets stuck, there are several steps to try.
 
 #
 
-### <u>System Restore</u> [source&nearr;](https://www.howtogeek.com/237230/how-to-enable-system-restore-and-repair-system-problems-on-windows-10/)
+### <u id="system-restore">System Restore</u> [source&nearr;](https://www.howtogeek.com/237230/how-to-enable-system-restore-and-repair-system-problems-on-windows-10/)
 
 System Restore is a Windows feature that can help fix certain types of crashes and other computer problems. Here’s how it works, how to set it up, and how to use it when things go awry.
 
@@ -437,7 +438,7 @@ System Restore is a Windows feature that can help fix certain types of crashes a
 
 #
 
-### <u>Manual System Restore</u>
+### <u id="manual-system-restore">Manual System Restore</u>
 
 If System Restore doesn’t work for you, you can try to do a manual system restore.
 

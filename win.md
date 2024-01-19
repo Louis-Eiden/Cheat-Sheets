@@ -7,7 +7,7 @@ A Cheat Sheet for Windows 10
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Run Commands](#run-commands)
 - [Folder Shortcuts](#folder-shortcuts)
-- [CMD Commands](#cmd-commands)
+- [CMD Commands](cmd.md)
 - [PowerShell Commands](#powershell-commands)
 - [Windows Terminal](#windows-terminal)
 - [Tools](#tools)
@@ -140,49 +140,7 @@ A Cheat Sheet for Windows 10
 | `%userprofile%\desktop`   | Go to Desktop folder             |
 | `%userprofile%\documents` | Go to Documents folder           |
 
-## **<u id="cmd-commands">CMD Commands</u>** [source&nearr;](https://ss64.com/nt/)
-
-#### - Open via Run dialog box - Windows Key + R, then type cmd
-
-#### - Open via File Explorer - Ctrl + l, then type cmd
-
-#### - Open via File Explorer - Shift + Right-click on a folder, then choose Open command window here
-
-#### - Drag and drop a folder into the command window to type the path
-
-| Command       | Description                                      |
-| ------------- | ------------------------------------------------ |
-| `F7`          | Display command history                          |
-| `F1`          | Copy previous command                            |
-| `\| clip`     | Copy command output to clipboard                 |
-| `>`           | Redirect command output to file                  |
-| `&&`          | Run multiple commands on one line if previous ok |
-| `&`           | Run multiple commands on one line                |
-| `^`           | Escape character                                 |
-| `\|\|`        | Run command if previous command fails            |
-| `/?`          | Help                                             |
-| `cls`         | Clear Screen                                     |
-| `cd`          | Change Directory                                 |
-| `cd ..`       | Change Directory to parent folder                |
-| `cd \`        | Change Directory to root folder                  |
-| `cd /d`       | Change Directory to a specific drive             |
-| `md`          | Make Directory                                   |
-| `rd`          | Remove Directory                                 |
-| `del`         | Delete file                                      |
-| `del /f`      | Force delete file                                |
-| `del /q`      | Quiet mode, do not ask if ok to delete on global |
-| `dir`         | List files and folders                           |
-| `dir /a`      | List all files and folders                       |
-| `copy`        | Copy file                                        |
-| `move`        | Move file                                        |
-| `ren`         | Rename file                                      |
-| `type`        | Display file contents                            |
-| `echo`        | Display message                                  |
-| `start`       | Start program                                    |
-| `tasklist`    | List running processes                           |
-| `taskkill`    | Kill process                                     |
-| `shutdown`    | Shutdown computer                                |
-| `shutdown /r` | Restart computer                                 |
+#
 
 ## **<u id="powershell-commands">PowerShell Commands</u>** [source&nearr;](https://ss64.com/ps/)
 
@@ -194,6 +152,8 @@ A Cheat Sheet for Windows 10
 | `Get-Command -Module Microsoft.PowerShell.Security`    | Get the commands for a specific module |
 | `Get-Command -Module Microsoft.PowerShell.Diagnostics` | Get the commands for a specific module |
 | `Get-Command -Module Microsoft.PowerShell.Host`        | Get the commands for a specific module |
+
+#
 
 ## **<u id="windows-terminal">Windows Terminal</u>** [source&nearr;](https://docs.microsoft.com/en-us/windows/terminal/)
 

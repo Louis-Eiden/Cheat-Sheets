@@ -1,5 +1,9 @@
 # Docker Cheat Sheet
 
+---
+## **UNDER CONSTRUCTION**
+---
+
 A cheat sheet for Docker commands.
 
 #
@@ -64,6 +68,25 @@ or
 
 > docker restart $(docker ps -q)
 
+### Deleting
+
+| Command                                            | Description                                                  |
+| -------------------------------------------------- | ------------------------------------------------------------ |
+| `docker rm [containerID or containerName]`         | Delete one or more containers                                |
+| `docker rm -f [containerID or containerName]`      | Force remove one or more containers                          |
+| `docker rm -v $(docker ps -a -q -f status=exited)` | Delete all stopped containers                                |
+| `docker rm $(docker ps -a -q)`                     | Delete all containers                                        |
+| `docker rmi [imageID or imageName]`                | Remove one or more images                                    |
+| `docker rmi $(docker images -q)`                   | Delete all images                                            |
+| `docker rmi $(docker images -q -f dangling=true)`  | Delete all dangling images                                   |
+| `docker volume rm $(docker volume ls -q)`          | Delete all volumes                                           |
+| `docker network rm $(docker network ls -q)`        | Delete all networks                                          |
+| `docker system prune`                              | Delete all containers, images, volumes and networks not used |
+
+### Stop all containers
+
+> docker stop $(docker ps -a -q)
+
 ### delete container volume
 
 > docker volume rm [containerID or containerName]
@@ -75,3 +98,22 @@ or
 ### delete all container volumes
 
 > docker volume rm $(docker volume ls -q)
+
+### delete all docker images
+
+> docker rmi $(docker images -q)
+
+### delete all docker networks
+
+> docker network rm $(docker network ls -q)
+
+### set resource limits for a container
+
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5" # Limits the container to use at most 50% of one CPU core
+          memory: "2000M" # Limits the container to use at most 512 megabytes of memory
+        reservations:
+          cpus: "0.25" # Reserves 25% of one CPU core for the container
+          memory: "1000M" # Reserves 256 megabytes of memory for the container

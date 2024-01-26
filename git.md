@@ -1,5 +1,9 @@
 # Git Cheat Sheet
 
+---
+## **UNDER CONSTRUCTION**
+---
+
 A cheat sheet for Git commands.
 
 #
@@ -108,6 +112,7 @@ git diff HEAD                # Display the difference between the current direct
 git commit -m "<message>"    # Commit your staged content as a new commit snapshot.
 git commit -a                # Commit any files you've added with git add and also commit any files you've changed since then.
 git commit -am "<message>"   # Commit any files you've added with git add and also commit any files you've changed since then.
+git commit --amend           # Amend the last commit with your staged changes and/or a new commit message.
 git notes add                # Creates a new note and associates it with an object (commit, tag, etc.).
 git restore <file>           # Restores the file in the working directory to its state in the last commit.
 git reset <commit>           # Resetting the staging area and the working directory to the state of the specified commit.
@@ -343,6 +348,58 @@ npm run deploy
 ```
 
 #
+
+## Git Credential Manager for Linux
+
+1. Download the latest version of the Git Credential Manager for Linux:
+
+https://github.com/git-ecosystem/git-credential-manager/releases/
+
+2. install using dpkg 
+
+```bash
+sudo dpkg -i [filename.deb]
+```
+
+3. install and set up GPG
+  
+  - install Gnupg
+  `sudo apt install gnupg`
+  - Generate a GPG key pair
+  `gpg --full-generate-key`
+  - choose default or RSA and RSA
+  - choose default or 3072
+  - choose default or 0
+  - confirm with Y
+  - enter your name
+  - enter your email
+  - enter a comment (optional)
+  - enter a passphrase
+
+4. list GPG keys
+
+```bash
+gpg --list-secret-keys --keyid-format LONG
+```
+5. copy GPG key ID
+
+```bash
+sec   4096R/<your-key-id> 2022-01-24 [expires: 2024-01-24]
+      Key fingerprint = ABCD 1234 EFGH 5678 IJKL 9012 MNOP QRST UVWX YZ01
+uid                              Your Name <your.email@example.com>
+ssb   4096R/SecondaryKeyID    2022-01-24
+```
+
+6. install and setup pass
+
+  - install pass
+  `sudo apt install pass`
+  - initialize pass
+  `pass init [GPG key ID]`
+  - add a password for your git account
+  `pass insert github.com`
+
+---
 
 ## Other
 

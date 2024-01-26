@@ -1,5 +1,9 @@
 # Django Cheat Sheet
 
+---
+## **UNDER CONSTRUCTION**
+---
+
 A cheat sheet for Django commands.
 
 #

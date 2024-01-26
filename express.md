@@ -1,5 +1,9 @@
 # Express Related Notes
 
+---
+## **UNDER CONSTRUCTION**
+---
+
 ## Express Session Middleware with MongoDB Store and Passport.js Authentication Middleware behind Nginx Reverse Proxy
 
 ### when using nginx as a reverse proxy, set proxy to true in session middleware options
@@ -32,8 +36,6 @@ authMiddleware.use(
     cookie: {
       maxAge: 360000,
       secure: process.env.NODE_ENV === "production", // true for production
-      sameSite: "none", // lax, strict, none
-      domain: "gamenights.de",
     },
   })
 );

@@ -26,6 +26,8 @@ A Cheat Sheet for Windows 10
   - [Windows 10 Secret Screen Recorder](#windows-10-secret-screen-recorder)
   - [Show Windows Keys](#show-windows-keys)
   - [Speed up Windows 10](#speed-up-windows-10)
+  - [Create a Windows 10 Bootable USB](#create-a-windows-10-bootable-usb)
+  - [Create a Linux Bootable USB](#create-a-linux-bootable-usb)
 - [Fixes](#fixes)
   - [Fix blurry apps](#fix-blurry-apps)
   - [Restart Graphics Driver](#restart-graphics-driver)
@@ -268,7 +270,7 @@ The Sysinternals Troubleshooting Utilities have been rolled up into a single sui
 
 #
 
-## **<u id="windows-10-god-mode">Windows 10 God Mode</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
+### **<u id="windows-10-god-mode">Windows 10 God Mode</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
 
 God Mode is a handy way to access multiple Windows commands in one single window. It’s not really a mode so much as a hidden control panel that contains everything, including some commands that are hidden from the regular Control Panel.
 
@@ -282,13 +284,13 @@ The folder icon will change to a Control Panel-style icon, and you can open it t
 
 #
 
-## **<u id="windows-10-secret-start-menu">Windows 10 Secret Start Menu</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
+### **<u id="windows-10-secret-start-menu">Windows 10 Secret Start Menu</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
 
 Windows 10 has a hidden menu for quick access to important features. To access it, right-click the Start button or press Windows+X on your keyboard.
 
 #
 
-## **<u id="windows-10-secret-screen-recorder">Windows 10 Secret Screen Recorder</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
+### **<u id="windows-10-secret-screen-recorder">Windows 10 Secret Screen Recorder</u>** [source&nearr;](https://www.howtogeek.com/436615/windows-10-god-mode/)
 
 Windows 10 has a secret, built-in tool intended to help record your screen during Xbox gaming sessions. But Game Bar can also be used with non-gaming apps.
 
@@ -300,13 +302,17 @@ To enable Game Bar:
 4. Click the Start Recording button (or `Win+Alt+R`) to start capturing video.
 5. Click it again to stop recording. Alternatively, you can press `Win+Alt+R` again to stop it.
 
-## **<u id="show-windows-keys">Show Windows Keys</u>**
+#
+
+### **<u id="show-windows-keys">Show Windows Keys</u>**
 
 ```powershell
 Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DigitalProductId' | Select-Object -Property PSChildName, DigitalProductId
 ```
 
-## **<u id="speed-up-windows-10">Speed up Windows 10</u>** [source&nearr;](https://www.howtogeek.com/435649/how-to-speed-up-windows-10/)
+#
+
+### **<u id="speed-up-windows-10">Speed up Windows 10</u>** [source&nearr;](https://www.howtogeek.com/435649/how-to-speed-up-windows-10/)
 
 1. Disable Startup Programs
    - Task Manager > Startup
@@ -336,6 +342,53 @@ Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Digit
     - Control Panel > System > Advanced System Settings > Performance > Settings > Advanced > Virtual Memory > Change
 14. Use a high performance power plan
     - Control Panel > Hardware and Sound > Power Options > High Performance
+
+#
+
+### **<u id="create-a-windows-bootable-usb">Create a Windows Bootable USB</u>**
+
+1. Download the [Windows Media Creation Tool](https://www.microsoft.com/en-us/software-download/)
+2. Run the tool and select Create installation media for another PC
+3. Select the language, architecture, and edition of Windows, you need to install
+4. Select USB flash drive
+5. Select the USB drive you want to use
+6. Wait for the tool to download the Windows 10 installation files and create the bootable USB
+
+#
+
+### **<u id="create-a-linux-bootable-usb">Create a Linux Bootable USB</u>**
+
+1. Download the [Rufus](https://rufus.ie/) tool
+2. Run the tool and select the USB drive you want to use
+3. Select the ISO image you want to use
+4. Select the partition scheme and target system type
+5. Select the file system and cluster size
+6. Select the volume label
+7. Check the Quick Format option
+8. Check the Create a bootable disk using option
+9. Select the ISO image option
+10. Click the Start button
+11. Click the OK button
+
+#
+
+### **<u id="create-a-bootable-usb-manually-using-cmd">Create a bootable USB Manually using CMD</u>**
+
+1. Open Command Prompt as Administrator
+2. Run `diskpart`
+3. Run `list disk`
+4. Run `select disk #` (replace # with the number of the USB drive)
+5. Run `clean`
+6. Run `create partition primary`
+7. Run `select partition 1`
+8. Run `active`
+9. Run `format fs=ntfs quick`
+10. Run `assign`
+11. Run `exit`
+12. Run `bootsect /nt60 #` (replace # with the drive letter of the USB drive)
+13. Copy the contents of the ISO image to the USB drive
+
+#
 
 ## **<u id="fixes">Fixes</u>**
 

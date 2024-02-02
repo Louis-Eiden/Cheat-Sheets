@@ -33,9 +33,149 @@ or
 
 `sudo apt install gnome-shell-extension-dash-to-dock`
 
+---
+
+### Install Nvidia Driver [source](#install-nvidia-driver)
+
+#### 1. check nvidia model
+
+`lspci | grep -i nvidia`
+
+#### 2. Add non-free to your repositories:
+
+`sudo nano /etc/apt/sources.list`
+
+#### Find the lines that look like deb http://deb.debian.org/debian/ buster main and add contrib non-free at the end of each line. It should look like:
+
+`deb http://deb.debian.org/debian/ buster main contrib non-free`
+
+or
+
+`echo 'deb http://deb.debian.org/debian/ buster main contrib non-free' | sudo tee /etc/apt/sources.list.d/non-free.list`
+
+#### 3. Update package lists:
+
+`sudo apt update`
+
+#### 4. Install Kernel Headers
+
+`sudo apt install linux-headers-$(uname -r)`
 
 
-### 3. [Install Nvidia Driver](#install-nvidia-driver)
+#### 5. Install the latest Nvidia graphics drivers on Debian 10 Buster
+
+`sudo apt install nvidia-driver`
+
+#### 6. Reboot your system to load the Nvidia kernel module:
+
+`sudo reboot`
+
+#### 7. Check if the Nvidia kernel module is loaded:
+
+`lsmod | grep nvidia`
+
+or
+
+`nvidia-smi`
+
+#
+
+### Alternatively you can add backports to your sources.list and install the latest Nvidia drivers from there:
+
+`sudo nano /etc/apt/sources.list`
+
+#### Add the following line to the end of the file:
+
+`deb http://deb.debian.org/debian buster-backports main contrib non-free`
+
+or 
+
+`echo 'deb http://deb.debian.org/debian buster-backports main contrib non-free' | sudo tee /etc/apt/sources.list.d/buster-backports.list`
+
+
+#### Update package lists:
+
+`sudo apt update`
+
+
+#### Install the latest Nvidia graphics drivers on Debian 10 Buster from backports:
+
+`sudo apt -t buster-backports install nvidia-driver`
+
+#### Reboot your system to load the Nvidia kernel module:
+
+`sudo reboot`
+
+#### Check if the Nvidia kernel module is loaded:
+
+`lsmod | grep nvidia`
+
+or
+
+nvidia-smi
+
+#
+
+#### 4. use nvidia-detect
+
+sudo apt install nvidia-detect
+
+sudo nvidia-detect
+
+#
+
+#### 3.7. if you have problems with the driver, you can uninstall it with:
+
+sudo apt purge nvidia-driver 
+
+or 
+
+sudo apt remove --purge nvidia-*
+
+then 
+
+sudo apt autoremove
+
+#### 3.8. If you want to install the latest Nvidia drivers, you can use the following PPA repository:
+
+sudo add-apt-repository ppa:graphics-drivers/ppa
+
+sudo apt update
+
+sudo apt install nvidia-driver
+
+#### 3.9. install nouveau driver (open source)
+
+sudo apt install xserver-xorg-video-nouveau
+
+#### 3.10. reconfigure xorg
+
+sudo dpkg-reconfigure xserver-xorg
+
+#### 3.11. reboot
+
+sudo reboot
+
+#### 3.12. check if nouveau is loaded
+
+
+lsmod | grep nouveau
+
+#### 3.13. if you have problems with the driver, you can uninstall it with:
+
+
+sudo apt purge xserver-xorg-video-nouveau
+
+or
+
+sudo apt remove --purge xserver-xorg-video-nouveau
+
+then
+
+sudo apt autoremove
+
+
+---
 
 ### 4. [Install Bluetooth Driver](#install-bluetooth-driver)
 
@@ -59,8 +199,6 @@ or
 
 ### 14. Install [Blender](https://www.blender.org/)
 
-### 15. install 
-
 ## Add user to sudoers
 
 ### 1. Log in as Root
@@ -75,7 +213,7 @@ or
 
 `usermod -aG sudo <username>`
 
-### 3. Add user to sudoers file
+### 3. Add user to sudoers file manually
 
 `sudo nano /etc/sudoers`
 

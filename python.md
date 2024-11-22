@@ -1,10 +1,13 @@
 # Python Cheatsheet
 
 ---
+
 ## **UNDER CONSTRUCTION**
+
 ---
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Variables](#variables)
 - [Data Types](#data-types)
@@ -21,67 +24,116 @@
 - [Syntax](#syntax)
 - [Examples](#examples)
 
+## Python Installation
+
+https://www.python.org/downloads/
+
+https://www.infoworld.com/article/3530140/how-to-install-python-the-smart-way.html#:~:text=By%20default%20the%20Python%20installer,directory%20(e.g.%20C%3A%5CPython3.
+
+https://www.youtube.com/watch?v=i-MuSAwgwCU&t=77s
+
+install python with apt:
+
+> sudo apt update
+> sudo apt install python3
+
+verify python installation:
+
+> python3 --version
+
+create a symlink for python3:
+
+> sudo ln -s /usr/bin/python3 /usr/bin/python
+
+install pip:
+
+> sudo apt install python3-pip
+
+## Virtual Environment
+
+> python -m venv venv
+
+activate virtual environment:
+
+> source venv/bin/activate
+
+deactivate virtual environment:
+
+> deactivate
+
 ## Introduction
+
 - Python is a high-level programming language...
 - ...
 
 ## Variables
+
 - Declaring variables
 - Variable naming conventions
 - ...
 
 ## Data Types
+
 - Numeric types (int, float, complex)
 - String type
 - List, tuple, and set types
 - ...
 
 ## Control Flow
+
 - if-else statements
 - for and while loops
 - break and continue statements
 - ...
 
 ## Functions
+
 - Defining and calling functions
 - Function arguments and return values
 - Lambda functions
 - ...
 
 ## Modules
+
 - Importing modules
 - Using built-in modules
 - Creating and using custom modules
 - ...
 
 ## File Handling
+
 - Opening and closing files
 - Reading and writing files
 - File modes and file objects
 - ...
 
 ## Exception Handling
+
 - Handling exceptions with try-except blocks
 - Raising exceptions
 - ...
 
 ## Classes and Objects
+
 - Defining classes and creating objects
 - Class attributes and methods
 - Inheritance and polymorphism
 - ...
 
 ## Regular Expressions
+
 - Pattern matching with regular expressions
 - Using regex functions and methods
 - ...
 
 ## Debugging
+
 - Using print statements
 - Debugging with breakpoints
 - ...
 
 ## Additional Resources
+
 - Online tutorials and documentation
 - Python community and forums
 - ...

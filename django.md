@@ -1,7 +1,9 @@
 # Django Cheat Sheet
 
 ---
+
 ## **UNDER CONSTRUCTION**
+
 ---
 
 A cheat sheet for Django commands.
@@ -17,8 +19,27 @@ A cheat sheet for Django commands.
 ### Install Python
 
 https://www.python.org/downloads/
+
 https://www.infoworld.com/article/3530140/how-to-install-python-the-smart-way.html#:~:text=By%20default%20the%20Python%20installer,directory%20(e.g.%20C%3A%5CPython3.
+
 https://www.youtube.com/watch?v=i-MuSAwgwCU&t=77s
+
+install python with apt:
+
+> sudo apt update
+> sudo apt install python3
+
+verify python installation:
+
+> python3 --version
+
+create a symlink for python3:
+
+> sudo ln -s /usr/bin/python3 /usr/bin/python
+
+install pip:
+
+> sudo apt install python3-pip
 
 ### Create project directory
 

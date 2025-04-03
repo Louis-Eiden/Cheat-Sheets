@@ -273,3 +273,13 @@ sudo usermod --append --groups vboxsf $USER
 ```
 
 2. Edit the file /etc/group (you will need root privileges). Look for the line vboxsf:x:999 and add at the end :yourusername -- use this solution if you don't have sudo
+
+### After installing an OS install Guest additions (needed for second monitor and shared clipboard/dragndrop)
+
+sudo apt update && sudo apt upgrade -y
+
+http://download.virtualbox.org/virtualbox/
+
+doppelklick reicht schon um das script zu starten
+
+installieren und rebooten fertig
